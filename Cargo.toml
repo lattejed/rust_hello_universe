@@ -1,0 +1,11 @@
+cargo-features = [
+  "edition2021"
+]
+
+[workspace]
+resolver = "2"
+
+members = [
+  "hello",
+  "somelib",
+]

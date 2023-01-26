@@ -1,0 +1,14 @@
+[package]
+name = "somelib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# The semver here has a lot of nuance. It's worth looking through
+# https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
+# Some (nonexhaustive) examples:
+thiserror = "1.0.38" # This does not mean exactly 1.0.38, it means 1.0.x
+#thiserror = "=1.0.38" # This specifies an exact version but can force other deps to use this version as well
+#thiserror = { git = "https://github.com/dtolnay/thiserror.git", branch = "master" } # Unpublished crates or versions
